@@ -23,4 +23,3 @@ GTTGT   Er72_SIE1B_1.fastq      Er72_SIE1B_2.fastq
 TAATG   Er73_SNG1_1.fastq       Er73_SNG1_2.fastq
 TACGT   Er74_SP16_1.fastq       Er74_SP16_2.fastq
 TAGCA   Er75_TRC2A_1.fastq      Er75_TRC2A_2.fastq
-
