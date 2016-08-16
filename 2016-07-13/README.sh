@@ -24,6 +24,8 @@ fi
 #from python script hamm.py assessing minimum distance
 #between words(five letters barcodes).
 #Script finished run with minimum distance between words = 3.
+#
+#Checking quality of reads and detection of overrepresent sequences using FastQC
 
 # Here we count the frequency of the first 5-letters words in the unknown_barcode1.fasta file
 if [ ! -e counts ]; then
@@ -116,3 +118,8 @@ fi
 #   FastQ records for barcode CGTAT: 7334390 (3667195 pairs)
 #   FastQ records for barcode CGGCG: 3569452 (1784726 pairs)
 #   FastQ records for barcode CGCGC: 9164044 (4582022 pairs)
+
+if [ ! -d fastqc ]; then
+   mkdir fastqc
+   fastqc -o fastqc -f fastq Er*_*.fastq.gz
+fi
